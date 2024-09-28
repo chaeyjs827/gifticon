@@ -1,20 +1,16 @@
 package com.perfect.gifticon.gifticon.domain.aggregate;
 
 import com.perfect.gifticon.gifticon.adapter.out.persistance.GifticonCommandRepository;
+import com.perfect.gifticon.gifticon.domain.vo.GifticonSaveCommand;
+import com.perfect.gifticon.users.adapter.out.persistance.UsersQueryRepository;
+import com.perfect.gifticon.users.domain.entity.UsersEntity;
 import lombok.Value;
 
 public class GifticonAggregate {
 
-    private final GifticonCommandRepository gifticonCommandRepository;
-
-    public GifticonAggregate(GifticonCommandRepository gifticonCommandRepository, GifticonId gifticonId) {
-        this.gifticonCommandRepository = gifticonCommandRepository;
-        this.gifticonId = gifticonId;
-    }
-
     private GifticonId gifticonId;
 
-    public void saveGifticon() {
+    public void saveGifticon(GifticonSaveCommand gifticonSaveCommand) {
         /** [중요] Aggregate 는 다른 Aggregate 를 호출하면 안됨
          * 왜? Aggregate 간의 결합도를 낮추기 위해서!! OutbuondPort 를 사용하면 문제 없지?
          * 1. 시스템 일관성 유지 : 서로 독립적인 상태를 관리하여 전체 시스템의 일관성을 높입니다.
@@ -23,10 +19,6 @@ public class GifticonAggregate {
          * 4. 테스트 용이성 : 각 Aggregate를 독립적으로 테스트할 수 있어, 테스트가 쉬워짐
          */
 
-//        1. 유효 회원 확인(Users 인데, 이건 아마 interceptor에서 처리할 듯)
-//        2. 해당 회원의 등록 가능 기프티콘 수 확인(Users 도메인)
-//        3. 기프티콘 등록(Gifticon 도메인)
-//        4. 해당 회원 기프티콘 등록 수 갱신(Users 도메인)
 
     }
 
