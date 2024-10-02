@@ -1,7 +1,4 @@
-package com.perfect.gifticon;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+package com.perfect.giftibox;
 
 @SpringBootApplication
 public class GifticonApplication {

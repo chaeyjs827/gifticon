@@ -14,4 +14,8 @@ public class GifticonSaveCommand{
     public GifticonSaveCommand(Long usersId) {
         this.usersId = usersId;
     }
+
+    public Long usersId() {
+        return null;
+    }
 }
