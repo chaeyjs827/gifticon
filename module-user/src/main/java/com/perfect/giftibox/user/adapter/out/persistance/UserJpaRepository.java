@@ -1,7 +1,7 @@
-package com.perfect.giftibox.gifticon.adapter.out.persistance;
+package com.perfect.giftibox.user.adapter.out.persistance;
 
 
-import com.perfect.giftbox.domain.entity.UserEntity;
+import com.perfect.giftibox.domain.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

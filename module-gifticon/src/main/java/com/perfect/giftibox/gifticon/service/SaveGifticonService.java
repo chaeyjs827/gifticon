@@ -1,7 +1,7 @@
 package com.perfect.giftibox.gifticon.service;
 
-import com.perfect.giftbox.domain.aggregate.GifticonAggregate;
-import com.perfect.giftbox.domain.vo.GifticonSaveCommand;
+import com.perfect.giftibox.domain.aggregate.GifticonAggregate;
+import com.perfect.giftibox.domain.vo.GifticonSaveCommand;
 import com.perfect.giftibox.gifticon.port.in.SaveGifticonUseCase;
 
 public class SaveGifticonService implements SaveGifticonUseCase {

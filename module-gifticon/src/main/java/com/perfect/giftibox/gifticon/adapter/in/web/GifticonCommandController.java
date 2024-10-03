@@ -1,6 +1,6 @@
 package com.perfect.giftibox.gifticon.adapter.in.web;
 
-import com.perfect.giftbox.domain.vo.GifticonSaveCommand;
+import com.perfect.giftibox.domain.vo.GifticonSaveCommand;
 import com.perfect.giftibox.gifticon.adapter.dto.request.GifticonCreateRequest;
 import com.perfect.giftibox.gifticon.annotation.WebAdapter;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.perfect.giftbox.domain.entity;
+package com.perfect.giftibox.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

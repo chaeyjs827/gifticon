@@ -1,4 +1,4 @@
-package com.perfect.giftbox.domain.vo;
+package com.perfect.giftibox.domain.vo;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;

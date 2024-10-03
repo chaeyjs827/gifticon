@@ -1,4 +1,4 @@
-package com.perfect.giftbox.domain.aggregate;
+package com.perfect.giftibox.domain.aggregate;
 
 import lombok.Value;
 

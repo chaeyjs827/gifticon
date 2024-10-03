@@ -1,6 +1,6 @@
-package com.perfect.giftbox.domain.aggregate;
+package com.perfect.giftibox.domain.aggregate;
 
-import com.perfect.giftbox.domain.vo.GifticonSaveCommand;
+import com.perfect.giftibox.domain.vo.GifticonSaveCommand;
 import lombok.Value;
 
 public class GifticonAggregate {
