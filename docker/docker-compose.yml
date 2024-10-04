@@ -1,14 +1,16 @@
 version: '3.8'
 
+volumes:
+  db:
+    driver: local
+
 services:
-  mysql:
+  db:
     image: mysql:8.0
-    build:
-      context: .
-      dockerfile: mysql/Dockerfile
-    container_name: mysql
     ports:
       - "3306:3306"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./mysql/01-databases.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: giftibox
+      MYSQL_ROOT_PASSWORD: root
